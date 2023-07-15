@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% load static %}
+{% block start %}
+
+
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'app/images/banner/b1.jpg' %}" class="d-block w-100" alt="banner">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/images/banner/b2.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/images/banner/b3.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/images/banner/b4.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+<div class=" mt-5 mb-5 row bg-success text-white text-center p-5 border-bottom-shadow ">
+    <h1>Products</h1>
+    <small class="fs-5">Neel offers wide range of products in both liquid milk and by-product categories. The liquid
+        milk comprises in 5 types of varients and by-products of comprises 14 types of varients.
+
+        Neel Dairy offers wide range of milk product comprises of Fresh Milk, Butter, Ghee, Paneer, Curd, Flavoured
+        Milk, Doodh Peda, Ice Cream and Skimmed Milk Powder.
+    </small>
+</div>
+
+
+
+<h1 class="display-1 mb-5">MARWA ASAD SHEIKH</h1>
+
+<div class="contianer row">
+
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'GH' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/images/products/buffalo-ghee.png' %}"
+                        class="img-responsive center-block" alt="" >
+                        <p class="mlkpro">Ghee</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'CR' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/images/products/curd-total.png' %}"
+                        class="img-responsive center-block" alt="" >
+                        <p class="mlkpro">Curd</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href=>
+            <a href="{% url 'category' 'IC' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/images/products/kulfi.png' %}"
+                        class="img-responsive center-block" alt="" >
+                        <p class="mlkpro">Icecream</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<br><br>
+
+<div class="contianer row">
+
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'MS' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/images/products/milk-shake-chocolate.png' %}"
+                        class="img-responsive center-block" alt="" >
+                        <p class="mlkpro">Milkshake</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'ML' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/images/products/cow-milk.png' %}"
+                        class="img-responsive center-block" alt="" >
+                        <p class="mlkpro">Milk</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'IC' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/images/products/icbars.png' %}"
+                        class="img-responsive center-block" alt="" >
+                        <p class="mlkpro">Icebars</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+{% endblock %}
