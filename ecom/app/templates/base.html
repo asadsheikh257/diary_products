@@ -1,6 +1,6 @@
 <!doctype html>
-{% load static %}
 <html lang="en">
+  {% load static %}
 
 <head>
   <meta charset="utf-8">
@@ -77,7 +77,7 @@
             <li><a href="{% url 'logout' %}" class="dropdown-item">Logout</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a href="#" class="nav-link text-white">Cart 4</a></li>
+        <li class="nav-item"><a href="{% url 'showcart' %}" class="nav-link text-white">Cart 4</a></li>
         <li class="nav-item"><a href="#" class="nav-link text-white">Whishlist 4</a></li>
         {% else %}
         <li class="nav-item"><a href="{% url 'login' %}" class="nav-link text-white">Login</a></li>

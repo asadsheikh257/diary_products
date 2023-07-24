@@ -33,12 +33,10 @@ urlpatterns = [
     path('category-title/<val>', CategoryTitle, name="category-title"),
     path('product-detail/<id>', ProductDetail, name="product_detail"),
     path('profile/', ProfileView, name="profile"),
-    # path('profile/', views.ProfileView.as_view(), name="profile"),
     path('address/', AddressView, name="address"),
     path('updateAddress/<int:id>', UpdateAddress, name="updateAddress"),
 
     # login_authentication
-
     path('registration/', CustomerRegistrationView, name='register'),
     path('accounts/login/', auth_view.LoginView.as_view(template_name='app/login.html',
          authentication_form=LoginForm), name='login'),
@@ -57,6 +55,12 @@ urlpatterns = [
     path('password-reset-complete/', auth_view.PasswordResetCompleteView.as_view(
         template_name='app/password_reset_complete.html'), name='password_reset_complete'),
 
+    # cart
+    path('add-to-cart/', AddToCart, name='add_to_cart'),
+    path('cart/',ShowCart, name='showcart'),
+    path('pluscart/', Plus_Cart),
+    path('minuscart/', Minus_Cart),
+    path('removecart/', Remove_Cart),
 
 
 
